@@ -1,0 +1,33 @@
+{% extends "baseLayout.html" %}
+{% load static %}
+{% block content %}
+	
+	<div style="background: #0f3e28">
+		<div class="container" style="padding-top: 30px; padding-bottom: 20px; width: 80%">
+		  <div class="row">
+		    <div class="col-md-7 col-sm-7" style=" color: white; align-items: center;">
+
+				
+		    	<h1 style="left: 139px;top: 330px;font-family: Raleway;font-style: normal;font-weight: 800;font-size: 50px;line-height: 74px;letter-spacing: 0.11em;color: #FFFFFF;">
+		    		TOMATO DISEASE CLASSIFICATION</h1>
+		    	<p style="left: 139px;top: 492px;font-family: Raleway;font-style: normal; font-weight: normal;font-size: 22px;line-height: 138.4%;letter-spacing: 0.11em;color: #FFFFFF; margin-top: 30px; margin-bottom: 50px">
+		    		This is an Image Processing and Machine Learning Based Application for Classification</p>
+
+
+		    	<button  type="button" class="btn" style="left: 139px;background: #FF6347;border-radius: 8px; ">
+		    		<a href="{% url 'binaryClassification' %}" style="font-style: normal;font-weight: 300;font-size: 20px;line-height: 36px;text-align: center;color: #FFFFFF;">Binary Classification</a>
+		    	</button>
+		    	<button  type="button" class="btn" style="margin-left:25px ;left: 416px;top: 662px;background: #FF6347;border-radius: 8px">
+		    		<a href="{% url 'multiClassification' %}" style="font-style: normal;font-weight: 300;font-size: 20px;line-height: 36px;text-align: center;color: #FFFFFF;">Multi-class Classification</a>
+		    	</button>
+			</div>
+		    <div class="col-md-5 col-sm-5" style="color: white">
+		    	<img src="{% static '/images/tomato.png' %}" width="500" 
+     				height="400" alt="My image" style="margin-left: 5px">
+			</div>
+		  </div>
+		</div>
+	</div>
+
+
+{% endblock %}

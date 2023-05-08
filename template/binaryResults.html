@@ -1,0 +1,44 @@
+{% extends "baseLayout.html" %}
+{% load static %}
+{% block content %}
+	<div style="background: #0f3e28; color: white" > 
+		<div class="container" style="color: white; margin-top: -40px; padding-bottom: 50px; text-align: center;">
+			
+			<h2>Classification Summary</h2>
+			<p>If Output is 0.0 then it is Healthy otherwise it is Unhealthy</p>
+		  <br>
+		  <div class="row">
+		  	<div class="col-md-10 offset-md-1 col-sm-12" style="border: 1px solid white">
+			  <table class="table table-stripped" style="color: white; font-size: 20px">
+			     <tr>
+			          <th>Image</th>
+			          <th>Output</th>
+			          
+			          <th>Feedback</th>
+
+			     </tr>
+			     <tr>
+			         <td><img src="data:image/jpeg;base64,{{ filePathName }}" width="190" height="200" alt="image" /></td>
+			         <td>{{ prediction1 }}</td>
+			         
+			         <td>{% if prediction1 == 0 %}
+			             Healthy
+			         {% else %}
+			             Unhealthy
+			         {% endif %} </td>
+			     </tr>
+
+			  </table>
+			</div>
+
+			  <div class="col-md-12 col-sm-12" style="padding-top: 10px">
+				  <button type="button" style="top: 662px;background: #FF6347;border-radius:8px; width: 120px; height: 40px; color: white; font-size: 22px; margin-top: 0px;">
+					  <a style="color: white" href="{% url 'binaryClassification' %}">Back</a>
+				  </button>
+
+			  </div>
+		</div>
+		</div>
+	</div>
+
+{% endblock %}

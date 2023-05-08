@@ -1,0 +1,36 @@
+{% extends "baseLayout.html" %}
+{% load static %}
+{% block content %}
+	<div style="background: #0f3e28; color: white" > 
+		<div class="container" style="color: white; margin-top: -10px; padding-bottom: 50px; text-align: center;">
+			
+			<h2>Classification Summary</h2>
+		  <br>
+		  <div class="row">
+		  	<div  class="col-md-6 offset-md-3 col-sm-12" style="border: 1px solid white; text-align: center;">
+			  <table class="table table-stripped" style="color: white; font-size: 20px">
+			     <tr>
+			          <th>Image</th>
+			          <th>Classification</th>
+
+			     </tr>
+			     <tr>
+			         <td><img src="{{filePathName}}" width="200" height="210" alt="" /></td>
+			         <td>{{ prediction1 }}</td>
+			     </tr>
+			         
+
+			  </table>
+			</div>
+			  <div class="col-md-12 col-sm-12" style="padding-top: 30px">
+				  <button type="button" style="top: 662px;background: #FF6347;border-radius:8px; width: 150px; height: 40px; color: white; font-size: 22px; margin-top: 10px;">
+					  <a style="color: white" href="{% url 'multiClassification' %}">Back</a>
+				  </button>
+
+			  </div>
+
+			</div>
+		</div>
+	</div>
+
+{% endblock %}

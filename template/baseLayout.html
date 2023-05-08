@@ -1,0 +1,61 @@
+{% load static %}
+<html>
+<head>
+	<title>Tomato Disease Classification</title>
+    <!-- Bootstrap CSS -->
+
+	<meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+
+      <link href="{% static 'web/default.css' %}" rel="stylesheet" type="text/css" media="all" />
+
+
+		<div >
+		  <div class="container" >
+		<nav class="navbar navbar-expand-lg " style="left:-100px; top: 26px; margin-bottom: 76px">
+		  <button style="background-color:white" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+			<!-- <img src="{% static 'images/logo.png'%}" href="{% url 'main' %}"> -->
+		    <a class="navbar-brand" style="width: 610px; height: 52px; left: 50px; top: 76px; font-family: Raleway; font-style: normal; font-weight: 800; font-size: 50px; line-height: 59px; color: #FFFFFF;" href="{% url 'main' %}">Classification App</a>
+
+			  <li class="nav-item">
+	        <a class="nav-link" style="width: 120px; height: 23px; left: 954px; top: 90px; font-family: Raleway; font-style: normal; font-weight: 500; font-size: 25px; line-height: 29px; color: #FFFFFF;" href="{% url 'main' %}">Home</a>
+	      </li>
+
+	      <li class="nav-item">
+	        <a class="nav-link" style="width: 138px; height: 23px; left: 1101px; top: 90px; font-family: Raleway; font-style: normal;font-weight: 500;font-size: 25px;line-height: 29px;color: #FFFFFF;" href="#">About</a>
+	      </li>
+
+	      <li class="nav-item">
+	        <a class="nav-link" style="width: 98px;height: 23px;left: 1267px;top: 90px;font-family: Raleway;font-style: normal;font-weight: 500;font-size: 25px;line-height: 29px;color: #FFFFFF;" href="#">Contact</a>
+	      </li>
+
+	    </ul>
+	  </div>
+	</nav>
+	</div>
+	</div>
+
+
+	  </head>
+	  <body style="font-family: Raleway; background-color: #0f3e28;">
+	  <div style="width:100%; height:68%; margin-top: 100px;">
+	    {% block content %} {% endblock %}
+	  </div>
+	   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	  </body>
+
+
+	<footer class="bg-light text-center text-lg-start">
+	  <!-- Copyright -->
+	  <div class="text-center p-3" style="background: #0f3e28;">
+	   <p style="color:white; font-size: 15px;">This Capstone Project Designed and Developed by <a href="https://pk.linkedin.com/in/arfan-shah"> Arfan Shah</a></p>
+	  </div>
+	  <!-- Copyright -->
+	</footer>
+</html>

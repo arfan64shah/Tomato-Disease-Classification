@@ -1,0 +1,28 @@
+{% extends "web/baseLayout.html" %}
+{% load static %}
+{% block content %} 
+	<div style="background: #0f3e28">
+		<div class="container" style="padding-top: 50px; padding-bottom: 20px; width: 80%">
+		  <div class="row">
+		    <div class="col-md-7 col-sm-7" style=" color: white">
+		    	<h1 style="left: 139px;top: 330px;font-family: Raleway;font-style: normal;font-weight: 800;font-size: 63px;line-height: 74px;letter-spacing: 0.11em;color: #FFFFFF;">
+		    		SELECT THE CLASSIFICATION TYPE</h1>
+		    	<p style="left: 139px;top: 492px;font-family: Raleway;font-style: normal;font-weight: normal;font-size: 25px;line-height: 138.4%;letter-spacing: 0.11em;color: #FFFFFF; margin-top: 30px; margin-bottom: 50px">
+		    		The model has been trained using multiple images. Upload an brain MRI scan image and let the model detect and classify based on the details</p>
+
+		    	<button type="button" class="btn" style="width: 175px;left: 139px;background: #FF6347;border-radius: 8px; ">
+		    		<a style="width: 238px;height: 30px;left: 140px;top: 682px;font-family: Raleway;font-style: normal;font-weight: 300;font-size: 21px;line-height: 36px;text-align: center;color: #FFFFFF;">Learn More</a>
+		    	</button>
+		    	<button type="button" class="btn" style="margin-left:25px ;left: 416px;top: 662px;background: #FF6347;border-radius: 8px">
+		    		<a style="width: 238px;height: 30px;left: 140px;top: 682px;font-family: Raleway;font-style: normal;font-weight: 300;font-size: 21px;line-height: 36px;text-align: center;color: #FFFFFF;">Start Classification</a>
+		    	</button>
+			</div>
+		    <div class="col-md-5 col-sm-5" style="color: white">
+		    	<img src="{% static '/images/tomato.png' %}" width="500" 
+     				height="400" alt="My image" style="margin-left: 5px">
+			</div>
+		  </div>
+		</div>
+	</div>
+
+{% endblock %}
